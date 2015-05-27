@@ -15,10 +15,13 @@ Plugin 'https://github.com/editorconfig/editorconfig-vim.git'
 
 " vim already has syntax support for javascript, but the indent support is
 " horrid. This fixes that.
-Bundle 'pangloss/vim-javascript'
+Plugin 'pangloss/vim-javascript'
 
 " vim indents HTML very poorly on it's own. This fixes a lot of that.
-Bundle 'indenthtml.vim'
+Plugin 'indenthtml.vim'
+
+" vim solarized
+Plugin 'altercation/vim-colors-solarized'
 
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
@@ -79,4 +82,8 @@ set virtualedit+=block
 " You'll see it a lot below as <leader>
 let mapleader = ","
 
-
+" Show line numbers
+set number
+syntax enable
+set background=dark
+colorscheme solarized
